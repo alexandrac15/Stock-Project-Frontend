@@ -6,6 +6,8 @@ import {SocialLoginModule, AuthServiceConfig, LoginOpt} from 'angularx-social-lo
 
 import {HttpClientModule} from '@angular/common/http';
 import { GraphComponent } from './Components/graph/graph.component';
+import {LineChartModule, NgxChartsModule} from '@swimlane/ngx-charts';
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 
 
@@ -31,7 +33,11 @@ const googleLoginOptions: LoginOpt = {
   imports: [
     BrowserModule,
 
-    HttpClientModule
+    HttpClientModule,
+    LineChartModule,
+    NoopAnimationsModule,
+    NgxChartsModule,
+    BrowserAnimationsModule
 
   ],
   providers: [  {

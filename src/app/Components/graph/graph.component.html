@@ -1,2 +1,14 @@
 <p>graph works!</p>
-{{graph.domain.length}}
+
+<ngx-charts-line-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxis]="xAxis"
+  [yAxis]="yAxis"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [timeline]="timeline"
+  [results]="multi">
+</ngx-charts-line-chart>

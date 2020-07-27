@@ -22,5 +22,11 @@ export class GraphService {
 
     const url = 'http://localhost:8080/graph/'+days;
     return this.http.get<Graph>(url, this.httpOptions);
+
   }
+
+
 }
+
+
+
