@@ -77,7 +77,7 @@ export class GraphComponent implements OnInit {
         console.log("in tssssssssssssssssssssssssssssssssssssssssssssssssssss: " + g.series[0])
         this.graph = g;
         g.name="alo";
-        this.multi=["alo", g.series];
+        this.multi=[g];
       }
     );
   }
