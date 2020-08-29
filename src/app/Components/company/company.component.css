@@ -1,0 +1,64 @@
+
+body {
+  background: linear-gradient(-45deg, #4632ff, #fea2ff, #b7e2fa, #9337d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#companyContainer{
+  position: absolute;
+  display: inline-block;
+  width: 37%;
+  top: 5%;
+  right: 4%;
+
+}
+
+
+#graphContainer{
+  position: absolute;
+  display: inline-block;
+  background-color: #14031d;
+ justify-content: center;
+  width: 51%;
+  top: 5%;
+  left: 4%;
+  padding: 60px 0px 0px 20px;
+
+}
+.matTitle{
+  padding: 15px 0px 0px 30px;
+   /*text-align: center;*/
+   /*text-justify: auto;*/
+   color: #fcfffa;
+   font-family: Arial;
+  font-weight: bolder;
+  font-size: xx-large;
+  line-height: normal;
+
+}
+a{
+  color: whitesmoke;
+}
+a:hover{
+  color: gray;
+}
+.cardstyle{
+
+  font-family: Arial;
+   width: 100%;
+
+  background: linear-gradient(#a5cde6, #8031e5);
+}

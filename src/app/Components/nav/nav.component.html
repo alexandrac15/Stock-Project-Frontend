@@ -1,0 +1,11 @@
+
+<div class="topnav">
+
+  <button mat-raised-button (click)="login()" id = "loginButton" *ngIf="isLogged == false">Login</button>
+<!--  <div *ngIf="isLogged==true">-->
+<!--    <p id = "picture"><img referrerpolicy="no-referrer" src="{{user.photoUrl}}"></p>-->
+<!--    <p id = "name">{{user.name}}</p>-->
+<!--  </div>-->
+  <button mat-raised-button (click)="logout()" id = "logoutButton" *ngIf="isLogged == true">Logout</button>
+
+</div>

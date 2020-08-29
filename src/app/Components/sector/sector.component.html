@@ -1,0 +1,25 @@
+
+
+
+  <body>
+  <div *ngIf="companies!=undefined">
+    <mat-grid-list cols="3" gutterSize="20px" rowHeight="100px">
+    <mat-grid-tile class="tylestyle"
+                   *ngFor="let tile of companies"
+                   [routerLink]="['../../company', tile.id]"  >  <mat-card  class="cardstyle">
+      <mat-card-header>
+        <mat-card-title > {{tile.companyName}}</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  </div>
+  </body>
+
+
+
+
+
+

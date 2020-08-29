@@ -1,1 +1,25 @@
 
+haey
+<input *ngIf="!loggedIn" type="button" (click)="signInWithGoogle()" value = "Login with google">
+
+<div *ngIf="loggedIn">
+  <br>
+  <p>Name:</p>
+  <p id = "name">{{ user.name }}</p>
+
+  <br><br>
+
+
+
+  <p>Mail:</p>
+  <p id = "mail">{{ user.email }}</p>
+  <p>Token:</p>
+  <p id = "token">{{ user.idToken }}</p>
+
+
+  <input type="button" (click)="callBackend()" value = "Get backend data">
+
+  <p>Data:</p>
+  <p id = "data care a venit in urma callului efectiv, un user hardocat de mine: ">{{ data.name }} {{data.email}}</p>
+
+</div>

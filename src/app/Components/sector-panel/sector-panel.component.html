@@ -1,0 +1,16 @@
+<body>
+
+<mat-grid-list  cols="3" gutterSize="20px" rowHeight="10.5%">
+  <mat-grid-tile class="tylestyle"
+    *ngFor="let tile of sectors"
+    [routerLink]="['../sector', tile.id]">  <mat-card class="cardstyle">
+    <mat-card-header>
+      <mat-card-title > {{tile.sector}}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+</body>

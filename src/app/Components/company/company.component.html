@@ -1,0 +1,35 @@
+<body>
+<div  id="graphContainer">
+  <app-graph [idCompany]="company.id"  ></app-graph>
+</div>
+
+
+<div id="companyContainer">
+<mat-card class="cardstyle">
+  <mat-card-header style="font-size: x-large; justify-content: right; margin: 0px 0px 20px 0px ;  padding-right: 0px; width:100%;">
+    <mat-card-title   class="matTitle"><a style=" text-decoration: none; " href={{company.website}} target="_blank">{{company.companyName}}</a></mat-card-title>
+    <div style="float: right; position: relative; display: inline-block"><img src="{{company.url}}" alt="logo">
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <p style="text-align: justify">
+      {{company.description}}
+    </p>
+    <p>{{company.sector.sector}}</p>
+
+    <p style="color: whitesmoke">Employees: {{company.employees}}</p>
+
+    <p style="color: whitesmoke">Industry: {{company.industry}}</p>
+
+    <button *ngIf = "isLogged == true" (click)="trackCompany()"> Track company </button>
+
+
+
+  </mat-card-content>
+
+</mat-card>
+
+</div>
+</body>
+
+
